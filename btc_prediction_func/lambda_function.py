@@ -8,6 +8,7 @@ import os
 
 
 BUCKET_NAME = 'sagemaker-us-east-2-535642252842'
+ENDPOINT_NAME = 'forecasting-deepar-2020-07-13-16-44-54-826'
 s3 = boto3.client('s3')
 
 
@@ -127,7 +128,7 @@ def lambda_handler(event, context):
     runtime = boto3.Session().client('sagemaker-runtime')
 
     # Now we use the SageMaker runtime to invoke our endpoint, sending the review we were given
-    response = runtime.invoke_endpoint(EndpointName = 'forecasting-deepar-2020-07-13-16-44-54-826',    # The name of the endpoint we created
+    response = runtime.invoke_endpoint(EndpointName = ENDPOINT_NAME,    # The name of the endpoint we created
                                        Body = json_input)                       # The actual data
 
     result_ = response['Body'].read()
