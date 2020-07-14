@@ -18,6 +18,8 @@ The final goal is to be able to predict next week stock price based on stock his
 
 Afterwards, you will have to wait a few minutes for your instance to be InService.
 
+When opening the Notebook for the first time, choose the Kernel **conda_mxnet_p36**
+
 
 # Instructions to instantiate the containers and create the forecasting model
 
