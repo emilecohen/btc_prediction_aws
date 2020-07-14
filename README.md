@@ -6,7 +6,7 @@ In this repository, we create a forecasting pipeline deployable through 3 differ
 - Amazon Lambda
 - Amazon API Gateway
 
-The final goal is to be able to predict next week stock price based on sotck historical data (daily).
+The final goal is to be able to predict next week stock price based on stock historical data (daily).
 
 # Instructions to launch the SageMaker Instance
 
